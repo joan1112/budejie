@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+
+
+target 'SwiftDemo' do
+pod 'KYCircularProgress'
+pod 'SnapKit','~> 4.2.0'
+pod 'GrowingTextView'
+pod 'Kingfisher'
+pod 'Alamofire'
+pod 'HandyJSON', '~> 5.0.0'
+pod 'ESPullToRefresh'
+pod 'SDWebImage'
+end

@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.8.1)
+  - ESPullToRefresh (2.9)
+  - GrowingTextView (0.6.1)
+  - HandyJSON (5.0.0)
+  - Kingfisher (4.10.1)
+  - KYCircularProgress (1.2.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESPullToRefresh
+  - GrowingTextView
+  - HandyJSON (~> 5.0.0)
+  - Kingfisher
+  - KYCircularProgress
+  - SDWebImage
+  - SnapKit (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ESPullToRefresh
+    - GrowingTextView
+    - HandyJSON
+    - Kingfisher
+    - KYCircularProgress
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ESPullToRefresh: ce058a36454a5032519cc9d8b45da217728cf104
+  GrowingTextView: 335aefa45df7df06b01edede1363414d6ee5d6bc
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  KYCircularProgress: caa1a8d1defa2acf05d2f84ea681467fbdb6d353
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 37fa9dd66b094db65d480b507e8fd6c30961a756
+
+COCOAPODS: 1.5.3

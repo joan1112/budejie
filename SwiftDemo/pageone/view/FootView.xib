@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bkP-In-i9O" customClass="FootView" customModule="SwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgt-NU-26g">
+                    <rect key="frame" x="5" y="5" width="92" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="97" image="mainCellDing">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="zanClick:" destination="bkP-In-i9O" eventType="touchUpInside" id="aR6-eM-U0U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-WK-7Ut">
+                    <rect key="frame" x="97" y="5" width="91.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="踩" image="mainCellCai">
+                        <color key="titleColor" red="0.63552671670000005" green="0.61581307649999995" blue="0.60390025380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="caiClick:" destination="bkP-In-i9O" eventType="touchUpInside" id="fOb-iy-O1Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kV-CV-V4m">
+                    <rect key="frame" x="188.5" y="5" width="92" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="100" image="mainCellComment">
+                        <color key="titleColor" red="0.63552671670000005" green="0.61581307649999995" blue="0.60390025380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="commentClcik:" destination="bkP-In-i9O" eventType="touchUpInside" id="1Qh-aY-LMN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q92-hj-Ge0">
+                    <rect key="frame" x="280.5" y="5" width="91.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="分享" image="mainCellShare">
+                        <color key="titleColor" red="0.63552671670000005" green="0.61581307649999995" blue="0.60390025380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="shareClick:" destination="bkP-In-i9O" eventType="touchUpInside" id="hHI-Gt-IIP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mgt-NU-26g" firstAttribute="leading" secondItem="bkP-In-i9O" secondAttribute="leading" constant="5" id="0lI-fF-Hyf"/>
+                <constraint firstAttribute="bottom" secondItem="mgt-NU-26g" secondAttribute="bottom" constant="5" id="1u3-Xq-Jih"/>
+                <constraint firstItem="q92-hj-Ge0" firstAttribute="width" secondItem="mgt-NU-26g" secondAttribute="width" id="3SV-lz-9do"/>
+                <constraint firstItem="q92-hj-Ge0" firstAttribute="top" secondItem="bkP-In-i9O" secondAttribute="top" constant="5" id="4XJ-ar-Omg"/>
+                <constraint firstAttribute="bottom" secondItem="nA5-WK-7Ut" secondAttribute="bottom" constant="5" id="A9F-IW-rEP"/>
+                <constraint firstAttribute="trailing" secondItem="q92-hj-Ge0" secondAttribute="trailing" constant="5" id="K6j-j1-J91"/>
+                <constraint firstItem="3kV-CV-V4m" firstAttribute="width" secondItem="mgt-NU-26g" secondAttribute="width" id="Nru-ok-3d2"/>
+                <constraint firstItem="mgt-NU-26g" firstAttribute="top" secondItem="bkP-In-i9O" secondAttribute="top" constant="5" id="O6q-Gg-A20"/>
+                <constraint firstAttribute="bottom" secondItem="q92-hj-Ge0" secondAttribute="bottom" constant="5" id="VEe-gQ-LPD"/>
+                <constraint firstItem="3kV-CV-V4m" firstAttribute="top" secondItem="bkP-In-i9O" secondAttribute="top" constant="5" id="XgZ-Hq-8RK"/>
+                <constraint firstItem="nA5-WK-7Ut" firstAttribute="top" secondItem="bkP-In-i9O" secondAttribute="top" constant="5" id="Zco-aS-z7D"/>
+                <constraint firstItem="nA5-WK-7Ut" firstAttribute="leading" secondItem="mgt-NU-26g" secondAttribute="trailing" id="Zps-mS-SUG"/>
+                <constraint firstAttribute="bottom" secondItem="3kV-CV-V4m" secondAttribute="bottom" constant="5" id="g2P-up-7yP"/>
+                <constraint firstItem="3kV-CV-V4m" firstAttribute="leading" secondItem="nA5-WK-7Ut" secondAttribute="trailing" id="hql-ar-aPT"/>
+                <constraint firstItem="q92-hj-Ge0" firstAttribute="leading" secondItem="3kV-CV-V4m" secondAttribute="trailing" id="rhQ-aR-fyx"/>
+                <constraint firstItem="nA5-WK-7Ut" firstAttribute="width" secondItem="mgt-NU-26g" secondAttribute="width" id="y2v-3C-DWo"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="caiBtn" destination="nA5-WK-7Ut" id="LMS-Kt-LOB"/>
+                <outlet property="commentBtn" destination="3kV-CV-V4m" id="2zZ-sy-uNQ"/>
+                <outlet property="shareBtn" destination="q92-hj-Ge0" id="7bc-SK-KDQ"/>
+                <outlet property="zanBtn" destination="mgt-NU-26g" id="Ueb-Ss-ESa"/>
+            </connections>
+            <point key="canvasLocation" x="277.536231884058" y="33.482142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+    </resources>
+</document>
