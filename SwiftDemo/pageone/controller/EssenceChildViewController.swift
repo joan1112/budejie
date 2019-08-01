@@ -17,9 +17,9 @@ class EssenceChildViewController: BaseViewController {
     var palyerItem:AVPlayerItem!
     var player:AVPlayer!
     var playerLayer:AVPlayerLayer!
+    var player1 : VGPlayer = VGPlayer()
     
-    
-    
+
   var typeCC: ContentType = .all
     lazy var tableV:UITableView = {
         let tab = UITableView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height:kScreenHeight-kTopHeight-kTabBarHeight), style: .plain)
@@ -141,7 +141,7 @@ extension EssenceChildViewController:UITableViewDelegate,UITableViewDataSource{
     func initPlay(cell:ContentTableViewCell,model:EseenceModel){
         self.palyCell = cell
       let  model: EseenceModel = self.palyCell.model
-//        creatAVPlayer(urlString: self.palyCell.model.video?.video[0] ?? "", frame: self.palyCell.model.videoFrame)s
+
         if self.player?.rate != 0.0{
             self.player?.pause()
             self.palyerItem = nil
@@ -162,23 +162,20 @@ extension EssenceChildViewController:UITableViewDelegate,UITableViewDataSource{
         self.palyCell.contentView.layer.addSublayer(playerLayer)
         //播放
         self.player.play()
+        
+//        self.player1.replaceVideo(NSURL(string: model.video?.video[0] ?? "")! as URL)
+//        self.palyCell.contentView.addSubview(self.player1.displayView)
+//
+//        self.player1.play()
+//        self.player1.backgroundMode = .proceed
+//        self.player1.delegate = self
+//        self.player1.displayView.delegate = self
+//        self.player1.displayView.titleLabel.text = "China NO.1"
+//        self.player1.displayView.frame = model.videoFrame
     }
     
     
-    func creatAVPlayer(urlString:String,frame:CGRect){
-        //创建媒体资源管理对象
-        self.palyerItem = AVPlayerItem(url: NSURL(string: urlString)! as URL)
-        //创建ACplayer：负责视频播放
-        self.player = AVPlayer.init(playerItem: self.palyerItem)
-        self.player.rate = 1.0//播放速度 播放前设置
-        //创建显示视频的图层
-        let playerLayer = AVPlayerLayer.init(player: self.player)
-        playerLayer.videoGravity = .resizeAspect
-        playerLayer.frame = frame
-        self.view.layer.addSublayer(playerLayer)
-        //播放
-        self.player.play()
-    }
+    
 }
 extension EssenceChildViewController{
     //查看大图
@@ -195,3 +192,35 @@ extension EssenceChildViewController{
     
     
 }
+
+extension EssenceChildViewController: VGPlayerDelegate {
+    func vgPlayer(_ player: VGPlayer, playerFailed error: VGPlayerError) {
+        print(error)
+    }
+    func vgPlayer(_ player: VGPlayer, stateDidChange state: VGPlayerState) {
+        print("player State ",state)
+    }
+    func vgPlayer(_ player: VGPlayer, bufferStateDidChange state: VGPlayerBufferstate) {
+        print("buffer State", state)
+    }
+    
+}
+
+extension EssenceChildViewController: VGPlayerViewDelegate {
+    
+    func vgPlayerView(_ playerView: VGPlayerView, willFullscreen fullscreen: Bool) {
+        
+    }
+    func vgPlayerView(didTappedClose playerView: VGPlayerView) {
+        if playerView.isFullScreen {
+            playerView.exitFullscreen()
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+    }
+    func vgPlayerView(didDisplayControl playerView: VGPlayerView) {
+        UIApplication.shared.setStatusBarHidden(!playerView.isDisplayControl, with: .fade)
+    }
+}
+

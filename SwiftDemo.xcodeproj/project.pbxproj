@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		91FA888C7AD488D94AD7DAC7 /* libPods-SwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358F1E7C949C5BC74401A310 /* libPods-SwiftDemo.a */; };
-		CF30F5ED22DC531300DB83F9 /* SeconTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30F5EC22DC531300DB83F9 /* SeconTextViewCell.swift */; };
 		CF30F5EF22DDC1A200DB83F9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30F5EE22DDC1A200DB83F9 /* Common.swift */; };
 		CF30F5F622E057C600DB83F9 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30F5F522E057C600DB83F9 /* MainTabViewController.swift */; };
 		CF30F5F922E058BB00DB83F9 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30F5F822E058BB00DB83F9 /* PersonalViewController.swift */; };
@@ -41,11 +40,8 @@
 		CF894D8322D4232700AE347B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF894D8122D4232700AE347B /* Main.storyboard */; };
 		CF894D8522D4233000AE347B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF894D8422D4233000AE347B /* Assets.xcassets */; };
 		CF894D8822D4233000AE347B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF894D8622D4233000AE347B /* LaunchScreen.storyboard */; };
-		CFAE0A9122D85BDB00816D54 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE0A9022D85BDB00816D54 /* ListViewController.swift */; };
-		CFAE0A9322D85C3500816D54 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE0A9222D85C3500816D54 /* ListTableViewController.swift */; };
 		CFAE0A9522D85C8A00816D54 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = CFAE0A9422D85C8900816D54 /* artists.json */; };
 		CFAE0A9822D85DA100816D54 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE0A9722D85DA100816D54 /* PeopleModel.swift */; };
-		CFAE0A9A22D880B400816D54 /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE0A9922D880B400816D54 /* ListPeopleCell.swift */; };
 		CFC3BC2D22EED219006DC31D /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC2122EED218006DC31D /* SDCycleScrollView.m */; };
 		CFC3BC2E22EED219006DC31D /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC2222EED218006DC31D /* UIView+SDExtension.m */; };
 		CFC3BC2F22EED219006DC31D /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC2322EED218006DC31D /* SDCollectionViewCell.m */; };
@@ -61,13 +57,34 @@
 		CFC3BC4622F02EED006DC31D /* EssenceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC4522F02EED006DC31D /* EssenceDetailVC.swift */; };
 		CFC3BC4922F04C5C006DC31D /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC4722F04C5C006DC31D /* PublishViewController.swift */; };
 		CFC3BC4A22F04C5C006DC31D /* PublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC3BC4822F04C5C006DC31D /* PublishViewController.xib */; };
+		CFC3BC9822F18CA8006DC31D /* VGPlayerLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8022F18CA8006DC31D /* VGPlayerLoadingIndicator.swift */; };
+		CFC3BC9922F18CA8006DC31D /* Timer+VGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8122F18CA8006DC31D /* Timer+VGPlayer.swift */; };
+		CFC3BC9A22F18CA8006DC31D /* VGPlayerCacheConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8322F18CA8006DC31D /* VGPlayerCacheConfiguration.swift */; };
+		CFC3BC9B22F18CA8006DC31D /* VGPlayerCacheMediaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8422F18CA8006DC31D /* VGPlayerCacheMediaWorker.swift */; };
+		CFC3BC9C22F18CA8006DC31D /* VGPlayerDownloadURLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8522F18CA8006DC31D /* VGPlayerDownloadURLSessionManager.swift */; };
+		CFC3BC9D22F18CA8006DC31D /* VGPlayerCacheMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8622F18CA8006DC31D /* VGPlayerCacheMedia.swift */; };
+		CFC3BC9E22F18CA8006DC31D /* VGPlayerDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8722F18CA8006DC31D /* VGPlayerDownloader.swift */; };
+		CFC3BC9F22F18CA8006DC31D /* VGPlayerResourceLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8822F18CA8006DC31D /* VGPlayerResourceLoaderManager.swift */; };
+		CFC3BCA022F18CA8006DC31D /* VGPlayerCacheMediaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8922F18CA8006DC31D /* VGPlayerCacheMediaConfiguration.swift */; };
+		CFC3BCA122F18CA8006DC31D /* VGPlayerCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8A22F18CA8006DC31D /* VGPlayerCacheManager.swift */; };
+		CFC3BCA222F18CA8006DC31D /* VGPlayerResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8B22F18CA8006DC31D /* VGPlayerResourceLoader.swift */; };
+		CFC3BCA322F18CA8006DC31D /* VGPlayerResourceLoadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8C22F18CA8006DC31D /* VGPlayerResourceLoadingRequest.swift */; };
+		CFC3BCA422F18CA8006DC31D /* VGPlayerDownloadActionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8D22F18CA8006DC31D /* VGPlayerDownloadActionWorker.swift */; };
+		CFC3BCA522F18CA8006DC31D /* VGPlayerCacheSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8E22F18CA8006DC31D /* VGPlayerCacheSession.swift */; };
+		CFC3BCA622F18CA8006DC31D /* VGPlayerCacheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC8F22F18CA8006DC31D /* VGPlayerCacheAction.swift */; };
+		CFC3BCA722F18CA8006DC31D /* VGPlayerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9022F18CA8006DC31D /* VGPlayerSlider.swift */; };
+		CFC3BCA822F18CA8006DC31D /* VGPlayerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9122F18CA8006DC31D /* VGPlayerUtils.swift */; };
+		CFC3BCA922F18CA8006DC31D /* UIButton+VGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9222F18CA8006DC31D /* UIButton+VGPlayer.swift */; };
+		CFC3BCAA22F18CA8006DC31D /* VGPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9322F18CA8006DC31D /* VGPlayerError.swift */; };
+		CFC3BCAB22F18CA8006DC31D /* VGSubtitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9422F18CA8006DC31D /* VGSubtitles.swift */; };
+		CFC3BCAC22F18CA8006DC31D /* VGPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9522F18CA8006DC31D /* VGPlayerView.swift */; };
+		CFC3BCAD22F18CA8006DC31D /* VGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3BC9622F18CA8006DC31D /* VGPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		358F1E7C949C5BC74401A310 /* libPods-SwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D21623880D618A0791DD1A6 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5E8C0A579079D1DBC1413309 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		CF30F5EC22DC531300DB83F9 /* SeconTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconTextViewCell.swift; sourceTree = "<group>"; };
 		CF30F5EE22DDC1A200DB83F9 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CF30F5F522E057C600DB83F9 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		CF30F5F822E058BB00DB83F9 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
@@ -102,11 +119,8 @@
 		CF894D8422D4233000AE347B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF894D8722D4233000AE347B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF894D8922D4233000AE347B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFAE0A9022D85BDB00816D54 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		CFAE0A9222D85C3500816D54 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		CFAE0A9422D85C8900816D54 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 		CFAE0A9722D85DA100816D54 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
-		CFAE0A9922D880B400816D54 /* ListPeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleCell.swift; sourceTree = "<group>"; };
 		CFC3BC1E22EED218006DC31D /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		CFC3BC1F22EED218006DC31D /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
 		CFC3BC2022EED218006DC31D /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
@@ -130,6 +144,29 @@
 		CFC3BC4522F02EED006DC31D /* EssenceDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssenceDetailVC.swift; sourceTree = "<group>"; };
 		CFC3BC4722F04C5C006DC31D /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		CFC3BC4822F04C5C006DC31D /* PublishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PublishViewController.xib; sourceTree = "<group>"; };
+		CFC3BC8022F18CA8006DC31D /* VGPlayerLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerLoadingIndicator.swift; sourceTree = "<group>"; };
+		CFC3BC8122F18CA8006DC31D /* Timer+VGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+VGPlayer.swift"; sourceTree = "<group>"; };
+		CFC3BC8322F18CA8006DC31D /* VGPlayerCacheConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheConfiguration.swift; sourceTree = "<group>"; };
+		CFC3BC8422F18CA8006DC31D /* VGPlayerCacheMediaWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheMediaWorker.swift; sourceTree = "<group>"; };
+		CFC3BC8522F18CA8006DC31D /* VGPlayerDownloadURLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerDownloadURLSessionManager.swift; sourceTree = "<group>"; };
+		CFC3BC8622F18CA8006DC31D /* VGPlayerCacheMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheMedia.swift; sourceTree = "<group>"; };
+		CFC3BC8722F18CA8006DC31D /* VGPlayerDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerDownloader.swift; sourceTree = "<group>"; };
+		CFC3BC8822F18CA8006DC31D /* VGPlayerResourceLoaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerResourceLoaderManager.swift; sourceTree = "<group>"; };
+		CFC3BC8922F18CA8006DC31D /* VGPlayerCacheMediaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheMediaConfiguration.swift; sourceTree = "<group>"; };
+		CFC3BC8A22F18CA8006DC31D /* VGPlayerCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheManager.swift; sourceTree = "<group>"; };
+		CFC3BC8B22F18CA8006DC31D /* VGPlayerResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerResourceLoader.swift; sourceTree = "<group>"; };
+		CFC3BC8C22F18CA8006DC31D /* VGPlayerResourceLoadingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerResourceLoadingRequest.swift; sourceTree = "<group>"; };
+		CFC3BC8D22F18CA8006DC31D /* VGPlayerDownloadActionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerDownloadActionWorker.swift; sourceTree = "<group>"; };
+		CFC3BC8E22F18CA8006DC31D /* VGPlayerCacheSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheSession.swift; sourceTree = "<group>"; };
+		CFC3BC8F22F18CA8006DC31D /* VGPlayerCacheAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheAction.swift; sourceTree = "<group>"; };
+		CFC3BC9022F18CA8006DC31D /* VGPlayerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerSlider.swift; sourceTree = "<group>"; };
+		CFC3BC9122F18CA8006DC31D /* VGPlayerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerUtils.swift; sourceTree = "<group>"; };
+		CFC3BC9222F18CA8006DC31D /* UIButton+VGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+VGPlayer.swift"; sourceTree = "<group>"; };
+		CFC3BC9322F18CA8006DC31D /* VGPlayerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerError.swift; sourceTree = "<group>"; };
+		CFC3BC9422F18CA8006DC31D /* VGSubtitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGSubtitles.swift; sourceTree = "<group>"; };
+		CFC3BC9522F18CA8006DC31D /* VGPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerView.swift; sourceTree = "<group>"; };
+		CFC3BC9622F18CA8006DC31D /* VGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayer.swift; sourceTree = "<group>"; };
+		CFC3BC9722F18CA8006DC31D /* VGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,10 +343,6 @@
 				CFAE0A9422D85C8900816D54 /* artists.json */,
 				CF894D7D22D4232700AE347B /* AppDelegate.swift */,
 				CF894D7F22D4232700AE347B /* ViewController.swift */,
-				CFAE0A9922D880B400816D54 /* ListPeopleCell.swift */,
-				CF30F5EC22DC531300DB83F9 /* SeconTextViewCell.swift */,
-				CFAE0A9222D85C3500816D54 /* ListTableViewController.swift */,
-				CFAE0A9022D85BDB00816D54 /* ListViewController.swift */,
 				CFAE0A9622D85D8000816D54 /* model */,
 				CF894D8122D4232700AE347B /* Main.storyboard */,
 				CF894D8422D4233000AE347B /* Assets.xcassets */,
@@ -360,6 +393,8 @@
 		CFC3BC3422EED252006DC31D /* common */ = {
 			isa = PBXGroup;
 			children = (
+				CFC3BC7F22F18CA8006DC31D /* Classes */,
+				CFC3BC9722F18CA8006DC31D /* VGPlayer.h */,
 				CFC3BC3822EED87F006DC31D /* Bridging-Header.h */,
 			);
 			path = common;
@@ -382,6 +417,43 @@
 				CFC3BC4522F02EED006DC31D /* EssenceDetailVC.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		CFC3BC7F22F18CA8006DC31D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3BC8022F18CA8006DC31D /* VGPlayerLoadingIndicator.swift */,
+				CFC3BC8122F18CA8006DC31D /* Timer+VGPlayer.swift */,
+				CFC3BC8222F18CA8006DC31D /* MediaCache */,
+				CFC3BC9022F18CA8006DC31D /* VGPlayerSlider.swift */,
+				CFC3BC9122F18CA8006DC31D /* VGPlayerUtils.swift */,
+				CFC3BC9222F18CA8006DC31D /* UIButton+VGPlayer.swift */,
+				CFC3BC9322F18CA8006DC31D /* VGPlayerError.swift */,
+				CFC3BC9422F18CA8006DC31D /* VGSubtitles.swift */,
+				CFC3BC9522F18CA8006DC31D /* VGPlayerView.swift */,
+				CFC3BC9622F18CA8006DC31D /* VGPlayer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CFC3BC8222F18CA8006DC31D /* MediaCache */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3BC8322F18CA8006DC31D /* VGPlayerCacheConfiguration.swift */,
+				CFC3BC8422F18CA8006DC31D /* VGPlayerCacheMediaWorker.swift */,
+				CFC3BC8522F18CA8006DC31D /* VGPlayerDownloadURLSessionManager.swift */,
+				CFC3BC8622F18CA8006DC31D /* VGPlayerCacheMedia.swift */,
+				CFC3BC8722F18CA8006DC31D /* VGPlayerDownloader.swift */,
+				CFC3BC8822F18CA8006DC31D /* VGPlayerResourceLoaderManager.swift */,
+				CFC3BC8922F18CA8006DC31D /* VGPlayerCacheMediaConfiguration.swift */,
+				CFC3BC8A22F18CA8006DC31D /* VGPlayerCacheManager.swift */,
+				CFC3BC8B22F18CA8006DC31D /* VGPlayerResourceLoader.swift */,
+				CFC3BC8C22F18CA8006DC31D /* VGPlayerResourceLoadingRequest.swift */,
+				CFC3BC8D22F18CA8006DC31D /* VGPlayerDownloadActionWorker.swift */,
+				CFC3BC8E22F18CA8006DC31D /* VGPlayerCacheSession.swift */,
+				CFC3BC8F22F18CA8006DC31D /* VGPlayerCacheAction.swift */,
+			);
+			path = MediaCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,46 +583,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC3BC9F22F18CA8006DC31D /* VGPlayerResourceLoaderManager.swift in Sources */,
 				CF30F5FF22E058FC00DB83F9 /* BaseViewController.swift in Sources */,
 				CFC3BC3022EED219006DC31D /* TADotView.m in Sources */,
+				CFC3BCA322F18CA8006DC31D /* VGPlayerResourceLoadingRequest.swift in Sources */,
+				CFC3BCAA22F18CA8006DC31D /* VGPlayerError.swift in Sources */,
 				CFC3BC4622F02EED006DC31D /* EssenceDetailVC.swift in Sources */,
 				CFC3BC3B22EEDE4F006DC31D /* SocialTableViewCell.swift in Sources */,
+				CFC3BC9A22F18CA8006DC31D /* VGPlayerCacheConfiguration.swift in Sources */,
+				CFC3BCA022F18CA8006DC31D /* VGPlayerCacheMediaConfiguration.swift in Sources */,
+				CFC3BCAD22F18CA8006DC31D /* VGPlayer.swift in Sources */,
 				CF30F61322E15B2700DB83F9 /* String+Extension.swift in Sources */,
+				CFC3BC9E22F18CA8006DC31D /* VGPlayerDownloader.swift in Sources */,
 				CF30F5EF22DDC1A200DB83F9 /* Common.swift in Sources */,
 				CFAE0A9822D85DA100816D54 /* PeopleModel.swift in Sources */,
 				CF894D8022D4232700AE347B /* ViewController.swift in Sources */,
 				CF30F60E22E15B2700DB83F9 /* UIColor+Extension.swift in Sources */,
+				CFC3BC9C22F18CA8006DC31D /* VGPlayerDownloadURLSessionManager.swift in Sources */,
 				CFC3BC3322EED219006DC31D /* TAAbstractDotView.m in Sources */,
+				CFC3BCA622F18CA8006DC31D /* VGPlayerCacheAction.swift in Sources */,
 				CF44269322E6A8B000253821 /* EseenceModel.swift in Sources */,
 				CFC3BC2D22EED219006DC31D /* SDCycleScrollView.m in Sources */,
 				CF44269C22E8515C00253821 /* ContentVideo.swift in Sources */,
+				CFC3BC9922F18CA8006DC31D /* Timer+VGPlayer.swift in Sources */,
 				CF30F5FD22E058ED00DB83F9 /* SocialViewController.swift in Sources */,
+				CFC3BCAB22F18CA8006DC31D /* VGSubtitles.swift in Sources */,
+				CFC3BC9822F18CA8006DC31D /* VGPlayerLoadingIndicator.swift in Sources */,
 				CFC3BC3122EED219006DC31D /* TAPageControl.m in Sources */,
-				CFAE0A9A22D880B400816D54 /* ListPeopleCell.swift in Sources */,
+				CFC3BCAC22F18CA8006DC31D /* VGPlayerView.swift in Sources */,
+				CFC3BCA222F18CA8006DC31D /* VGPlayerResourceLoader.swift in Sources */,
 				CF30F61122E15B2700DB83F9 /* UIImage+Extension.swift in Sources */,
 				CF30F5FB22E058D500DB83F9 /* AttentionViewController.swift in Sources */,
 				CF44269622E8328800253821 /* ContentTableViewCell.swift in Sources */,
+				CFC3BCA422F18CA8006DC31D /* VGPlayerDownloadActionWorker.swift in Sources */,
 				CF4426F922EADA6C00253821 /* ShowImageView.swift in Sources */,
 				CFC3BC2E22EED219006DC31D /* UIView+SDExtension.m in Sources */,
 				CF894D7E22D4232700AE347B /* AppDelegate.swift in Sources */,
-				CFAE0A9122D85BDB00816D54 /* ListViewController.swift in Sources */,
 				CFC3BC4122EEE495006DC31D /* SocilaModel.swift in Sources */,
 				CFC3BC3222EED219006DC31D /* TAAnimatedDotView.m in Sources */,
+				CFC3BCA722F18CA8006DC31D /* VGPlayerSlider.swift in Sources */,
 				CF30F60322E1577400DB83F9 /* MainTabbar.swift in Sources */,
+				CFC3BCA922F18CA8006DC31D /* UIButton+VGPlayer.swift in Sources */,
 				CF44269822E84BD900253821 /* PictureView.swift in Sources */,
 				CF30F60D22E15B2700DB83F9 /* UIImageView+Extension.swift in Sources */,
+				CFC3BCA122F18CA8006DC31D /* VGPlayerCacheManager.swift in Sources */,
 				CF30F61022E15B2700DB83F9 /* UIView+Extension.swift in Sources */,
+				CFC3BC9B22F18CA8006DC31D /* VGPlayerCacheMediaWorker.swift in Sources */,
+				CFC3BCA822F18CA8006DC31D /* VGPlayerUtils.swift in Sources */,
 				CFC3BC2F22EED219006DC31D /* SDCollectionViewCell.m in Sources */,
 				CF30F5F922E058BB00DB83F9 /* PersonalViewController.swift in Sources */,
 				CF44268C22E598FD00253821 /* EssenceChildViewController.swift in Sources */,
 				CF4426A222E85A5C00253821 /* FootView.swift in Sources */,
-				CFAE0A9322D85C3500816D54 /* ListTableViewController.swift in Sources */,
 				CFC3BC3F22EEE467006DC31D /* SocialViewModel.swift in Sources */,
 				CFC3BC4322F02CB1006DC31D /* BaseNavigationController.swift in Sources */,
 				CF30F61422E15B2700DB83F9 /* UIBarButtonItem+Extesion.swift in Sources */,
-				CF30F5ED22DC531300DB83F9 /* SeconTextViewCell.swift in Sources */,
 				CFC3BC4922F04C5C006DC31D /* PublishViewController.swift in Sources */,
+				CFC3BCA522F18CA8006DC31D /* VGPlayerCacheSession.swift in Sources */,
 				CF30F5F622E057C600DB83F9 /* MainTabViewController.swift in Sources */,
+				CFC3BC9D22F18CA8006DC31D /* VGPlayerCacheMedia.swift in Sources */,
 				CF30F60122E0598400DB83F9 /* FirstViewController.swift in Sources */,
 				CF30F60F22E15B2700DB83F9 /* Date+Extension.swift in Sources */,
 				CF44269122E6A1FD00253821 /* EssenceViewModel.swift in Sources */,
