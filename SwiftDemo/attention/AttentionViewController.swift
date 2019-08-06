@@ -80,10 +80,24 @@ extension AttentionViewController:UITableViewDelegate,UITableViewDataSource{
         let cell: ContentTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ContentTableViewCell
         
         cell.model = self.dataArr[indexPath.row]
+        cell.imgShowData = {model in
+            self.showBigPicture(model1: model, cell: cell)
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let model:EseenceModel = self.dataArr[indexPath.row]
         return model.cellHeight
+    }
+    
+    func showBigPicture(model1:EseenceModel,cell:ContentTableViewCell){
+        if model1.type != "video" {
+            let show =  ShowImageView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
+            show.outFrame = cell.frame
+            self.view.addSubview(show)
+            show.show(model: model1)
+        }
+        
+        
     }
 }

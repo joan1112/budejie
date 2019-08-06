@@ -9,5 +9,5 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 #import "SDCycleScrollView.h"
-
+#import "SVProgressHUD.h"
 #endif /* Bridging_Header_h */

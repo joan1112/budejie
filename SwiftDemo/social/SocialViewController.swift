@@ -64,7 +64,7 @@ extension SocialViewController:UITableViewDelegate,UITableViewDataSource{
    
            let model = self.dataArr?[indexPath.row]
         cell.leftImg.kf.setImage(with: URL(string: model?.image_list ?? ""))
-
+        
         cell.titleLab.text = model?.theme_name ?? ""
         cell.descripLab.text = model?.info ?? ""
         return cell

@@ -164,9 +164,11 @@ class ContentTableViewCell: UITableViewCell {
     }
     
     
-   @objc func showBigPicture(){
-         
-        imgShowData!(model)
+   @objc fileprivate func showBigPicture(){
+   
+         imgShowData!(model)
+  
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

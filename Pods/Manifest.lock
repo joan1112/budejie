@@ -9,6 +9,7 @@ PODS:
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
   - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - KYCircularProgress
   - SDWebImage
   - SnapKit (~> 4.2.0)
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -30,6 +32,7 @@ SPEC REPOS:
     - KYCircularProgress
     - SDWebImage
     - SnapKit
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -40,7 +43,8 @@ SPEC CHECKSUMS:
   KYCircularProgress: caa1a8d1defa2acf05d2f84ea681467fbdb6d353
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 37fa9dd66b094db65d480b507e8fd6c30961a756
+PODFILE CHECKSUM: c5072373875002cec08ccad5a496ac98b2d25c22
 
 COCOAPODS: 1.5.3

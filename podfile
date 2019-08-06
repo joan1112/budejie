@@ -10,4 +10,6 @@ pod 'Alamofire'
 pod 'HandyJSON', '~> 5.0.0'
 pod 'ESPullToRefresh'
 pod 'SDWebImage'
+pod 'SVProgressHUD'
+
 end
